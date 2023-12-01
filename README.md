@@ -1,4 +1,3 @@
-xsxcxsVenni Jetti
 # Vision Statement:
 (Need to assign a product manager before starting)
 
