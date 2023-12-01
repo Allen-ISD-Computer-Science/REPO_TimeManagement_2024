@@ -1,5 +1,11 @@
 # Vision Statement:
-(Need to assign a product manager before starting)
+”We want to make an app 
+ that helps with time management/organization”
+ 
+Our goal is to track time, reminding you to stay on topic, and reminding to do your work.
+The reason we need the features is to 
+improve our time management skills.
+Ultimately, being a better version of yourself.
 
 # Roles:
 - Product Manager: Srivenni Jetti - @venni-jetti - [Digital Portfolio][3]
