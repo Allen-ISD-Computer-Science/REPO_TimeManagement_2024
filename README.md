@@ -3,7 +3,7 @@ xsxcxsVenni Jetti
 (Need to assign a product manager before starting)
 
 # Roles:
-- Product Manager: Srivenni Jetti - @venni-jetti - [Digital Portfolio] [3]
+- Product Manager: Srivenni Jetti - @venni-jetti - [Digital Portfolio][3]
 - Project Manager: Kayana Rajan - @kayana-rajan - [Digital Portfolio][2]
 - Release Manager: Caysen Mayo - @lumen-novum - [Digital Portfolio][1]
 - QA Analyst: Srivenni Jetti - @venni-jetti - [Digital Portfolio][3]
