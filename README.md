@@ -16,5 +16,5 @@ Ultimately, being a better version of yourself.
 
 [1]: https://codermerlin.academy/users/caysen-mayo/Digital%20Portfolio/index.html
 [2]: https://codermerlin.academy/users/kayana-rajan/Digital%20Portfolio/index.html
-[3]: https://codermerlin.academy/users/srivenni-jetti/Digital%Portfolio/index.html
+[3]: https://codermerlin.academy/users/srivenni-jetti/Digital%20Portfolio/index.html
 [4]: https://www.codermerlin.academy/users/goeun-lee/Digital%20Portfolio/index.html
