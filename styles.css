@@ -1,6 +1,13 @@
 body {
-    background-color: forestgreen;
-    color: white;
+    background-color: #cedbca;
+    color: #717894;
+}
+
+.web-menu p {
+    float: left;
+    padding-right: 50px;
+    overflow: hidden;
+    font-size: 20px;
 }
 
 .italy {
