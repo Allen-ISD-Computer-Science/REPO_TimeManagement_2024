@@ -13,3 +13,12 @@ body {
 .italy {
     color: red;
 }
+
+.row {
+    float: left;
+}
+
+rect {
+    width: 10vw;
+    height: 10vh;
+}
