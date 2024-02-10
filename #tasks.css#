@@ -1,6 +1,6 @@
 body {
     background-color: #eeeeee;
-    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'IBM Plex Sans KR', sans-se
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -13,7 +13,7 @@ body {
 
 .side {
     flex: 1;
-    background-color: #eeeeee;
+    background-color: #f0f0f0;
     padding: 20px;
     box-sizing: border-box;
 }
