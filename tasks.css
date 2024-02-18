@@ -26,3 +26,25 @@ body {
 }
 
 
+
+/*all task~~ is related to task align and design*/
+
+.task-list {
+    list-style-type: none; /*will remove all the bullet points*/
+    padding: 0;
+}
+
+.task-list li { /*target li*/
+    display: flex;
+    flex-direction: column;
+    margin-botton: 10px;
+}
+
+.task-list label {
+    margin-bottom: 5px;
+}
+
+.task-list li input {
+    width: 300px; 
+}
+
