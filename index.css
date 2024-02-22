@@ -1,3 +1,33 @@
 body {
-  background-color: lightblue;
+    background-color: #eaebe6;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    margin: 0;
+    paddinf: 0;
+    overflow: hidden;
 }
+#rcorners1 {
+  border-radius: 25px;
+  background: #717894 ;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #c3d6dd;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
+#rcorners3 {
+  border-radius: 25px;
+  background: #cedbca;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+
