@@ -23,13 +23,13 @@ function resetTimer() {
     updateTimer(); //makes it display reset timer
 }
 
-function  updateTimer() 
+function  updateTimer() {
     if (seconds < targetTime) {
 	seconds++;
 	const remainingSeconds = targetTime - seconds;
 	const minutes = Math,floor(remainingSeconds / 60);
 	const remainingSecondsDisplay = remainingSeconds % 60;
-	document.getElementbyId('timer').innerText = '00:00';
+	document.getElementbyId('timer').innerText = '${formatTime(minute)}:${formatTime(remainingSecondsDisplay)}';
     } else {
 	clearInterval(timer);
 	document.getElementById('timer').innerText = '00:00';
