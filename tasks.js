@@ -10,7 +10,7 @@ let timer, seconds = 0, targetTime = 0;
 
 function startTimer(duration) {
     targetTime = duration * 60; //convert mins -> secs
-    timer = setInterval(updateTime, 1000) //will constantly update timer
+    timer = setInterval(updateTimer, 1000) //will constantly update timer
 }
 
 function pauseTimer() {
@@ -27,9 +27,9 @@ function  updateTimer() {
     if (seconds < targetTime) {
 	seconds++;
 	const remainingSeconds = targetTime - seconds;
-	const minutes = Math,floor(remainingSeconds / 60);
+	const minutes = Math.floor(remainingSeconds / 60);
 	const remainingSecondsDisplay = remainingSeconds % 60;
-	document.getElementbyId('timer').innerText = '${formatTime(minute)}:${formatTime(remainingSecondsDisplay)}';
+	document.getElementById('timer').innerText = formatTime(minutes)+ ":" + formatTime(remainingSecondsDisplay)
     } else {
 	clearInterval(timer);
 	document.getElementById('timer').innerText = '00:00';
@@ -37,10 +37,7 @@ function  updateTimer() {
 }
 
 function formatTime(time) {
-    return time < 10 ? '0${time}' : time;
+    return time < 10 ? "0"+time : time;
 }
 
 
-
-
-}
