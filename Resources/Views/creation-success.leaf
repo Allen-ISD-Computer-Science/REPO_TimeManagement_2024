@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TM Backend Test</title>
+  </head>
+
+  <body>
+    <p>Welcome #(user)!</p>
+    <p>Here is your login code: #(code)</p>
+    <p><b>Make sure to write this down so you can access your account later!</b></p>
+
+    <a href="./">I've written my code down, take me back home!</a>
+  </body>
+</html>
