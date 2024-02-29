@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TM Backend Test</title>
+  </head>
+
+  <body>
+    <h2>Account Status</h2>
+    <!--Account details here-->
+    <p>User: #(username)</p>
+    
+    <h2>Create an Account</h2>
+    <!--Acount creation fields-->
+    <form action="./create-account" method="post">
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <button type="submit">Continue</button>
+    </form>
+
+    <h2>Login to Account</h2>
+    <!--Login fields-->
+    <form action="./login" method="post">
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="password" placeholder="Enter Login Code" name="uname" required>
+      <button type="submit">Login</button>
+    </form>
+    
+    <h2>View Friends</h2>
+    <!--User's friend list here-->
+
+    <h2>Friend Study Feed</h2>
+    <!--User's friend feed here-->
+
+    <h2>Travel Details</h2>
+    <!--User's Travel Progress here-->
+
+    <h2>To Do List</h2>
+    <!--User's todo list-->
+    
+  </body>
+</html>
