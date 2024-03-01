@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Tasks</title>
+
+    <script src="tasks.js"></script>
+    
+    <!-- Font Codes - Do Not Touch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tasks.css">
+    <!--Font Codes End-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tasks.css">
+
+  </head>
+  
+
+
+  
+  <body>    
+    <div class="container">
+      
+      <div class="side">
+	<h2>Timer</h2>
+	<button onclick="startTimer(30)">Start 30 min</button>
+	<button onclick="startTimer(60)">Start 60 min</button>
+	<h3 id="timer"></h3>
+      </div>
+
+      <div class="main">
+	<h2>Todo Lists</h2>
+
+	<ul class="task-list">
+
+	  <li>
+	    <label for="userInput1">Task 1</label>
+	    <input type="text" id="userInput1" name="userInput1">
+	  </li>
+
+	  <li>
+	    <label for="userInput2">Task 2</label>
+	    <input type="text" id="userInput2" name="userInput2">
+	  </li>
+
+	  <li>
+	    <label for="userInput3">Task 3</label>
+	    <input type="text" id="userInput3" name="userInput3">
+	  </li>
+	  <!-- Add more tasks if needed, start w li-->
+	  
+	</ul>
+	
+      </div> <!--matches w div class main - the todo list-->
+    </div> <!--matches w div class container-->
+    
+    
+</body>
+</html>
