@@ -1,0 +1,176 @@
+Last login: Wed Feb 28 13:58:56 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+STEMACB20229:~ 259628$ ./telnet telnet.codermerlin.academy
+Trying 3.23.184.244...
+Connected to telnet.codermerlin.academy.
+Escape character is '^]'.
+Ubuntu 23.04
+codermerlin login: kayana-rajan
+Password: 
+Last login: Wed Feb 28 14:14:36 CST 2024 from 207.235.134.11 on pts/282
+IGIS LOCAL PORT is '10506'
+VAPOR LOCAL PORT is '11506'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                            |  1 <!DOCTYPE html>                                                                                                                         
+                                                                                                                                            |  2 <html lang="en">                                                                                                                        
+                                                                                                                                            |  3   <head>                                                                                                                                
+                                                                                                                                            |  4     <meta charset="utf-8">                                                                                                              
+                                                                                                                                            |  5     <title>Time Management</title>                                                                                                      
+                                                                                                                                            |  6     <link rel="preconnect" href="https://fonts.googleapis.com">                                                                         
+                                                                                                                                            |  7     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                                                                
+                                                                                                                                            |  8     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@700&display=swap" rel="stylesheet">                      
+                                                                                                                                            |  9     <link rel="stylesheet" href="index.css">                                                                                            
+                                                                                                                                            | 10   </head>                                                                                                                               
+                                                                                                                                            | 11   <body>                                                                                                                                
+                                                                                                                                            | 12     <div class="web-menu">                                                                                                              
+                                                                                                                                            | 13       <p> <a href="tasks.html">Tasks</a></p>                                                                                            
+                                                                                                                                            | 14       <p>Traveling</p>                                                                                                                  
+                                                                                                                                            | 15       <p>Create new task</p>                                                                                                            
+                                                                                                                                            | 16       <p>Friend Feed</p>                                                                                                                
+                                                                                                                                            | 17       <p>Settings</p>                                                                                                                   
+                                                                                                                                            | 18     </div>                                                                                                                              
+                                                                                                                                            | 19                                                                                                                                         
+                                                                                                                                            | 20     <style>                                                                                                                             
+                                                                                                                                            | 21     .box {                                                                                                                              
+                                                                                                                                            | 22         width: 400px;                                                                                                                   
+                                                                                                                                            | 23         height: 195px;                                                                                                                  
+                                                                                                                                            | 24         border-radius: 10px;                                                                                                            
+                                                                                                                                            | 25         margin: 45px;                                                                                                                   
+                                                                                                                                            | 26         display: inline-block;                                                                                                          
+                                                                                                                                            | 27     }                                                                                                                                   
+                                                                                                                                            | 28                                                                                                                                         
+                                                                                                                                            | 29     .box1 {                                                                                                                             
+                                                                                                                                            | 30         background-color: #717894;                                                                                                      
+                                                                                                                                            | 31     }                                                                                                                                   
+                                                                                                                                            | 32                                                                                                                                         
+                                                                                                                                            | 33     .box2 {                                                                                                                             
+                                                                                                                                            | 34         background-color: #c3d6dd;                                                                                                      
+                                                                                                                                            | 35     }                                                                                                                                   
+                                                                                                                                            | 36                                                                                                                                         
+                                                                                                                                            | 37     .box3 {                                                                                                                             
+                                                                                                                                            | 38         background-color: #cedbca;                                                                                                      
+                                                                                                                                            | 39     }                                                                                                                                   
+                                                                                                                                            | 40                                                                                                                                         
+                                                                                                                                            | 41     .box4 {                                                                                                                             
+                                                                                                                                            | 42         background-color: #cedbca;                                                                                                      
+                                                                                                                                            | 43     }                                                                                                                                   
+                                                                                                                                            | 44                                                                                                                                         
+                                                                                                                                            | 45     .box5 {                                                                                                                             
+                                                                                                                                            | 46         background-color: #847e6e;                                                                                                      
+                                                                                                                                            | 47     }                                                                                                                                   
+                                                                                                                                            | 48                                                                                                                                         
+                                                                                                                                            | 49     .box6 {                                                                                                                             
+                                                                                                                                            | 50         background-color: #eaebe6;                                                                                                      
+                                                                                                                                            | 51     }                                                                                                                                   
+                                                                                                                                            | 52                                                                                                                                         
+                                                                                                                                            | 53     .box7 {                                                                                                                             
+                                                                                                                                            | 54         background-color: #eaebe6;                                                                                                      
+                                                                                                                                            | 55     }                                                                                                                                   
+                                                                                                                                            | 56                                                                                                                                         
+                                                                                                                                            | 57     .box8 {                                                                                                                             
+                                                                                                                                            | 58         background-color: #eaebe6;                                                                                                      
+                                                                                                                                            | 59     }                                                                                                                                   
+                                                                                                                                            | 60                                                                                                                                         
+                                                                                                                                            | 61     .box9 {                                                                                                                             
+                                                                                                                                            | 62         background-color: #eaebe6;                                                                                                      
+                                                                                                                                            | 63     }                                                                                                                                   
+                                                                                                                                            | 64                                                                                                                                         
+                                                                                                                                            | 65     .box10 {                                                                                                                            
+                                                                                                                                            | 66         background-color: #847e6e;                                                                                                      
+                                                                                                                                            | 67     }                                                                                                                                   
+                                                                                                                                            | 68                                                                                                                                         
+                                                                                                                                            | 69     .box11 {                                                                                                                            
+                                                                                                                                            | 70         background-color: #d3d3d3;                                                                                                      
+                                                                                                                                            | 71     }                                                                                                                                   
+                                                                                                                                            | 72                                                                                                                                         
+                                                                                                                                            | 73     .box12 {                                                                                                                                                                                                                                                                       background-color: #d3d3d3;                                                                                                      
+                                                                                                                       }                                                                                                                                  
