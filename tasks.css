@@ -48,3 +48,18 @@ body {
     width: 300px; 
 }
 
+
+/*Basic UI/UX for Active Timer Buttons*/
+.button {
+    display: inline-block; /*makes it act like a box*/
+    padding: 12px 24px; /*12 pixel on top bottom, 24 pixel~ */
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; /*making sure the website doesn't add underlines*/
+    cursor: pointer;
+    border: 4px solid #cedbca;
+    color: 
+	background-color:
+	font-family: 'IBM Plex Sans KR', san-serif;
+}
+    
