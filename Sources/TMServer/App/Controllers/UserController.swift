@@ -3,7 +3,7 @@ import Fluent
 import FluentMySQLDriver
 
 public class UserController {
-    private func generateLoginCode() throws -> String {
+    public func generateLoginCode() -> String {
         // dict is at /usr/share/dict/words
         let wordList = "/usr/share/dict/words"
         var loginCode = ""
@@ -20,11 +20,27 @@ public class UserController {
             for _ in stride(from: 0, to: 4, by: 1) {
                 loginCode += arrayOfWords[Int.random(in:0..<arrayOfWords.count)] + " "
             }
+            loginCode.removeLast()
             
         } catch {
             print(error)
         }
+        
+        return loginCode
+    }
 
-        return loginCode.removeLast()
+    public func isNameAvailable(_ username: String) -> Bool {
+        return true
+    }
+    
+    public func createUser(_ username: String) throws -> Int {
+        var statusCode = 200
+        var account = ["username": username]
+
+        if isNameAvailable(username) {
+            account["password"] = generateLoginCode()
+        }
+        
+        return statusCode
     }
 }

@@ -23,7 +23,7 @@ final public class User: Model, Content {
     public static let schema = "users"
 
     /// Unique identifier for this user
-    @ID(custom: "user_id", generatedBy: .database)
+    @ID(custom: "id", generatedBy: .database)
     public var id: Int?
 
     @Field(key: "username")

@@ -13,7 +13,7 @@
     <h2>Create an Account</h2>
     <!--Acount creation fields-->
     <form action="./create-account" method="post">
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" placeholder="Enter Username" name="username" required>
       <button type="submit">Continue</button>
     </form>
 

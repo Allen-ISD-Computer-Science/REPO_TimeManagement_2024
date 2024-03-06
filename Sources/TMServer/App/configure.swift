@@ -26,14 +26,24 @@ func configure(_ app: Application) throws {
     app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
     app.views.use(.leaf)
 
+    guard let dbName = Environment.get("DB_NAME") else {
+        fatalError("Unable to find the server credentials! Are you sure you ran the script from 'server-run.sh'?")
+    }
+    guard let dbUsername = Environment.get("DB_USERNAME") else {
+        fatalError("Unable to find the server credentials! Are you sure you ran the script from 'server-run.sh'?")
+    }
+    guard let dbPassword = Environment.get("DB_PASSWORD") else {
+        fatalError("Unable to find the server credentials! Are you sure you ran the script from 'server-run.sh'?")
+    }
+    
     var tls = TLSConfiguration.makeClientConfiguration()
     tls.certificateVerification = .none
     app.databases.use(.mysql(
                         hostname: "db",
                         port: MySQLConfiguration.ianaPortNumber,
-                        username: "",
-                        password: "",
-                        database: "CMW_AISD_TimeMan_2024",
+                        username: dbUsername,
+                        password: dbPassword,
+                        database: dbName,
                         tlsConfiguration: tls
                       ), as: .mysql)
 

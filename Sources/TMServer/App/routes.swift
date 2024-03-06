@@ -18,9 +18,24 @@ import Vapor
 import Fluent
 import FluentMySQLDriver
 
+struct TestUser: Content {
+    var username: String
+}
+
 func routes(_ app: Application) throws {
     let userInfo = ["username": "Not logged in"]
+    let userController = UserController()
+
+    // app.get -> GET request made
+    // app.post -> POST request made
+    app.post("create-account") { req in 
+        let user = try req.content.decode(TestUser.self)
+        let username = user.username
+        print(username)
+        return req.view.render("creation-success", ["user": username, "code": userController.generateLoginCode()])
+    }
     
+                                                          
     app.get { req in
         return req.view.render("backend_test", userInfo)
     }
