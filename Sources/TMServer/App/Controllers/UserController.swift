@@ -2,8 +2,13 @@ import Vapor
 import Fluent
 import FluentMySQLDriver
 
+public struct ServerResult {
+    var success: Bool
+    var info: String
+}
+
 public class UserController {
-    public func generateLoginCode() -> String {
+    private func generateLoginCode() -> String {
         // dict is at /usr/share/dict/words
         let wordList = "/usr/share/dict/words"
         var loginCode = ""
@@ -29,18 +34,25 @@ public class UserController {
         return loginCode
     }
 
-    public func isNameAvailable(_ username: String) -> Bool {
-        return true
+    public func queryNameAvailablity(req: Request, username: String) throws -> EventLoopFuture<Bool> {
+        return User.query(on: req.db)
+          .filter(\.$username == username)
+          .first()
+          .map { user in
+              return user == nil
+          }
     }
     
-    public func createUser(_ username: String) throws -> Int {
-        var statusCode = 200
-        var account = ["username": username]
+    public func createUser(req: Request, username: String) throws -> EventLoopFuture<ServerResult> {
+        let isNameAvailable = try queryNameAvailablity(req: req, username: username)
+        return isNameAvailable.map { asyncCheck -> ServerResult in
+            var returnString = "UsernameTaken"
+            if asyncCheck {
+                returnString = self.generateLoginCode()
+            }
 
-        if isNameAvailable(username) {
-            account["password"] = generateLoginCode()
+            let resultToBeConverted = ServerResult(success: asyncCheck, info: returnString)
+            return resultToBeConverted
         }
-        
-        return statusCode
     }
 }

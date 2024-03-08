@@ -31,8 +31,10 @@ func routes(_ app: Application) throws {
     app.post("create-account") { req in 
         let user = try req.content.decode(TestUser.self)
         let username = user.username
-        print(username)
-        return req.view.render("creation-success", ["user": username, "code": userController.generateLoginCode()])
+
+        return try userController.createUser(req: req, username: username).map { creationResult in
+            return req.view.render("creation-success", ["user": username, "code": creationResult.info])
+            }
     }
     
                                                           

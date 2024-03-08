@@ -20,7 +20,7 @@ import FluentMySQLDriver
 /// This class provides the model for a user
 final public class User: Model, Content {
     // Name of the table or collection.
-    public static let schema = "users"
+    public static let schema = "Users"
 
     /// Unique identifier for this user
     @ID(custom: "id", generatedBy: .database)
