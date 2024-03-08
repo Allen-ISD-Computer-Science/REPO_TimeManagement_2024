@@ -8,7 +8,7 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
+    height: 200vh;
 }
 
 .side {
@@ -52,14 +52,44 @@ body {
 /*Basic UI/UX for Active Timer Buttons*/
 .button {
     display: inline-block; /*makes it act like a box*/
-    padding: 12px 24px; /*12 pixel on top bottom, 24 pixel~ */
+    padding: 2vh 4vh; /*12 pixel on top bottom, 24 pixel~ */
     font-size: 16px;
     text-align: center;
     text-decoration: none; /*making sure the website doesn't add underlines*/
     cursor: pointer;
-    border: 4px solid #cedbca;
-    color: 
-	background-color:
-	font-family: 'IBM Plex Sans KR', san-serif;
+    border: 4px solid #dce5d9;
+    color: #17202A; 
+    background-color: #FDFEFE;
+    font-family: 'IBM Plex Sans KR', san-serif;
+    border-radius: 40px;
 }
-    
+
+
+.button:hover {
+    background-color: #f0f4ef;
+}
+
+#button15 {
+    top: 80vh;
+    left: 5vh;
+    position: absolute;
+}
+
+#button30 {
+    top: 80vh;
+    left: 19.5vh;
+    position: absolute; /*depends on screen*/
+}
+
+#button45 {
+    top: 80vh;
+    left: 34vh;
+    position: absolute;      
+}
+
+#button60 {
+    top: 80vh;
+    left: 48.5vh;
+    position: absolute;
+
+}
