@@ -45,13 +45,19 @@ public class UserController {
     
     public func createUser(req: Request, username: String) throws -> EventLoopFuture<ServerResult> {
         let isNameAvailable = try queryNameAvailablity(req: req, username: username)
-        return isNameAvailable.map { asyncCheck -> ServerResult in
+        return isNameAvailable.map { asyncCheckPassed -> ServerResult in
             var returnString = "UsernameTaken"
-            if asyncCheck {
+            if asyncCheckPassed {
                 returnString = self.generateLoginCode()
+                // TODO: Hash passwords!
+                User(username: username, password: returnString).save(on: req.db)
+            } else {
+                // TODO: Add proper error handling with taken usernames
+                print("username taken!")
             }
 
-            let resultToBeConverted = ServerResult(success: asyncCheck, info: returnString)
+
+            let resultToBeConverted = ServerResult(success: asyncCheckPassed, info: returnString)
             return resultToBeConverted
         }
     }

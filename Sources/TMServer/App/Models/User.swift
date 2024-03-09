@@ -29,7 +29,16 @@ final public class User: Model, Content {
     @Field(key: "username")
     public var username: String
 
+    @Field(key: "password")
+    public var password: String
+
     // Creates a new, empty user.
     public init() { }
+
+    public init(id: Int? = nil, username: String, password: String) {
+        self.id = id
+        self.username = username
+        self.password = password
+    }
 }
 
