@@ -20,25 +20,25 @@ import FluentMySQLDriver
 /// This class provides the model for a user
 final public class User: Model, Content {
     // Name of the table or collection.
-    public static let schema = "Users"
+    public static let schema = "User"
 
     /// Unique identifier for this user
-    @ID(custom: "id", generatedBy: .database)
+    @ID(custom: "UserId", generatedBy: .database)
     public var id: Int?
 
-    @Field(key: "username")
+    @Field(key: "Username")
     public var username: String
 
-    @Field(key: "password")
-    public var password: String
+    @Field(key: "LoginCode")
+    public var loginCode: String
 
     // Creates a new, empty user.
     public init() { }
 
-    public init(id: Int? = nil, username: String, password: String) {
+    public init(id: Int? = nil, username: String, loginCode: String) {
         self.id = id
         self.username = username
-        self.password = password
+        self.loginCode = loginCode
     }
 }
 

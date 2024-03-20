@@ -13,6 +13,7 @@ public class UserController {
         let wordList = "/usr/share/dict/words"
         var loginCode = ""
 
+        // generate login code
         do {
             // parse word list and convert to array
             let rawString = try String(contentsOfFile: wordList)
@@ -46,19 +47,19 @@ public class UserController {
     public func createUser(req: Request, username: String) throws -> EventLoopFuture<ServerResult> {
         let isNameAvailable = try queryNameAvailablity(req: req, username: username)
         return isNameAvailable.map { asyncCheckPassed -> ServerResult in
-            var returnString = "UsernameTaken"
             if asyncCheckPassed {
-                returnString = self.generateLoginCode()
-                // TODO: Hash passwords!
-                User(username: username, password: returnString).save(on: req.db)
+                let loginCode = self.generateLoginCode()
+                
+                req.password.async.hash(loginCode).map { loginHash in
+                    User(username: username, loginCode: loginHash).save(on: req.db) 
+                }
+
+                return ServerResult(success: asyncCheckPassed, info: loginCode)
             } else {
                 // TODO: Add proper error handling with taken usernames
                 print("username taken!")
+                return ServerResult(success: asyncCheckPassed, info: "usename taken")
             }
-
-
-            let resultToBeConverted = ServerResult(success: asyncCheckPassed, info: returnString)
-            return resultToBeConverted
         }
     }
 }
