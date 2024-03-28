@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Page</title>
+    <style>
+      
+      body {
+            font-family: Verdana, sans-serif;
+            transition: background-color 0.3s ease;
+            margin: 0;
+            padding: 0;
+      }
+      header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 50px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+  <body>
+    <header>
+        <h1>Theme Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to the  theme page! This is the home section.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>Learn about our product.</p>
+    </section>
+<section id="services">
+        <h2>Services</h2>
+        <p>Look at the services we provide.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Contact us for any information.</p>
+    </section>
+     <script>
+      function changeThemeColor(color) {
+	  document.body.style.backgroundColor = color;
+            document.querySelectorAll('header, footer').forEach(element => {
+                element.style.backgroundColor = color;
+            });
+      }
+      changeThemeColor('#ff5733');
+    </script>
+  </body>
+  </html>

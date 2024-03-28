@@ -49,11 +49,15 @@ body {
 }
 
 
+.side{
+    position: relative;
+}
+
 /*Basic UI/UX for Active Timer Buttons*/
 .button {
     display: inline-block; /*makes it act like a box*/
-    padding: 2vh 4vh; /*12 pixel on top bottom, 24 pixel~ */
-    font-size: 16px;
+    padding: 12px 24px; /*12 pixel on top bottom, 24 pixel~ */
+    font-size: 17px;
     text-align: center;
     text-decoration: none; /*making sure the website doesn't add underlines*/
     cursor: pointer;
@@ -61,35 +65,43 @@ body {
     color: #17202A; 
     background-color: #FDFEFE;
     font-family: 'IBM Plex Sans KR', san-serif;
-    border-radius: 40px;
+    border-radius: 10px; /*higher digits = rounder boxs*/
 }
 
+#timer {
+    font-size: 25px;
+    top: 70vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .button:hover {
     background-color: #f0f4ef;
 }
 
+
 #button15 {
     top: 80vh;
-    left: 5vh;
+    left: 3vw;
     position: absolute;
 }
 
 #button30 {
     top: 80vh;
-    left: 19.5vh;
+    left: 10vw;
     position: absolute; /*depends on screen*/
 }
 
 #button45 {
     top: 80vh;
-    left: 34vh;
+    left: 17vw;
     position: absolute;      
 }
 
 #button60 {
     top: 80vh;
-    left: 48.5vh;
+    left: 24vw;
     position: absolute;
 
 }
